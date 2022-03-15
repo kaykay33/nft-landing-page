@@ -10,9 +10,12 @@
   --font-code: 'Roboto', monospace;
   --bg-color: #a043f7;
   --font-color: #000000;
-  --btn-bg-color: #4371de;
-  --accent-color: #000000;
-  --header-shadow: #000 0px 0px 5px;
+  --font-button-color: #000000;
+  --font-contdown-color: #000000;
+  --btn-bg-color: rgb(69, 115, 222);
+  --accent-color: #c6d885;
+  --accent-button: #4c4ac4;
+  --header-shadow: rgb(255, 255, 255) 0px 0px 5px;
 }
 
 * {
@@ -38,6 +41,15 @@ body {
   padding: 1rem 2rem;
 }
 
+.picture {
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 8rem 2rem;
+}
+
+
 /* HEADER */
 
 header {
@@ -62,14 +74,14 @@ header .container {
   display: inline-block;
   padding: 1rem 2rem;
   background: var(--btn-bg-color);
-  color: var(--accent-color);
+  color: var(--font-button-color);
   font-family: var(--font-secondary);
   font-style: italic;
   font-weight: bold;
   font-size: 1rem;
   text-transform: capitalize;
   transition: all 0.3s ease;
-  box-shadow: 4px 4px 0 0 var(--accent-color);
+  box-shadow: 4px 4px 0 0 var(--accent-button);
   cursor: pointer;
   position: relative;
   text-decoration: none;
@@ -86,7 +98,7 @@ header .container {
 }
 
 .hero-btn {
-  border-radius: 4px;
+  border-radius: 10px;
   font-size: 1.2rem;
   padding: 1.5rem 3rem;
 }
@@ -103,6 +115,19 @@ section {
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.header ul {
+  display: flex;
+  gap: 2rem
 }
 
 .countdown ul {
@@ -125,23 +150,31 @@ section {
   width: 100%;
   text-align: center;
   line-height: 1;
-  border-radius: 4px 4px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 .countdown .clock-item .count-text {
   background: var(--btn-bg-color);
   font-family: var(--font-secondary);
   font-size: 1.1rem;
-  color: var(--bg-color);
+  color: var(--font-contdown-color);
   padding: 0.5rem 0.7rem;
   display: inline-block;
   width: 100%;
   text-align: center;
   line-height: 1;
-  border-radius: 0 0 4px 4px;
+  border-radius: 0 0 10px 10px;
 }
 
 .countdown h1 {
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--font-contdown-color);
+  font-style: italic;
+  margin: 2rem 0;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.header h1 {
+  text-shadow: 2px 2px 0 var(--font-contdown-color);
   font-style: italic;
   margin: 2rem 0;
   font-size: 3.5rem;
@@ -179,5 +212,12 @@ section {
   .countdown p {
     font-size: 1rem;
   }
+}
+.header h1 {
+  font-size: 2.5rem;
+}
+.header p {
+  font-size: 1.2rem;
+}
 }
  
