@@ -91,6 +91,39 @@ header .container {
   padding: 1.5rem 3rem;
 }
 
+.mintButton {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--btn-bg-color);
+  color: var(--accent-color);
+  font-family: var(--font-secondary);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+  box-shadow: 4px 4px 0 0 var(--accent-color);
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  outline: none;
+}
+.mintButton:hover {
+  box-shadow: none;
+}
+
+.wallet-mintButton {
+  border-radius: 5rem;
+  margin-left: 2rem;
+  border-color: transparent;
+}
+
+.hero-mintButton {
+  border-radius: 4px;
+  font-size: 1.2rem;
+  padding: 1.5rem 3rem;
+}
+
 /* COUNTDOWN SECTION */
 
 section {
@@ -150,6 +183,13 @@ section {
 
 .countdown p {
   font-size: 1.1rem;
+  font-family: var(--font-secondary);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.bold {
+  font-size: 2rem;
   font-family: var(--font-secondary);
   margin-bottom: 2rem;
   text-align: center;
