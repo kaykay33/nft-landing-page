@@ -56,6 +56,13 @@ header .container {
   align-items: center;
 }
 
+.img-gif {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50%;
+}
+
 /* BUTTONS */
 
 .btn {
