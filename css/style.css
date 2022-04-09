@@ -188,6 +188,10 @@ section {
   text-align: center;
 }
 
+.nft-art-gen-mint-progress {
+  font-size: 0rem;
+}
+
 /* OWNER STYLES */
 
 .owner-status {
